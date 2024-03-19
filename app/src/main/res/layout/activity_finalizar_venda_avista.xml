@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="View.FinalizarVendaAvistaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="35dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:src="@drawable/bt_voltar_roxo"
+            android:backgroundTint="@color/white"
+            android:id="@+id/btVoltar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Pagamento A Vista"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="@color/purple"
+            android:textSize="22sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="Valor Total:"
+            android:textSize="16sp"
+            android:textColor="@color/purple"
+            android:fontFamily="@font/rubik_light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:textSize="22sp"
+            android:textColor="@color/purple"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="end"/>
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="PAGAMENTO"
+        android:textColor="@color/purple"
+        android:textSize="22sp"
+        android:fontFamily="@font/rubik_medium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingRight="-20dp"
+        android:paddingLeft="-20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/purple"></LinearLayout>
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione a Forma de Pagamento"
+            app:layout_constraintBottom_toTopOf="@+id/spFormaPagamento"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="16sp"
+            android:textColor="@color/purple"
+            android:fontFamily="@font/rubik_light"/>
+        <Spinner
+            android:id="@+id/spFormaPagamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/btFinalizarVenda"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <Button
+            android:id="@+id/btFinalizarVenda"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/purple"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Finalizar"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    
+
+</LinearLayout>

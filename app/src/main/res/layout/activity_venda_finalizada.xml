@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="View.VendaFinalizadaActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="35dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:src="@drawable/bt_fechar"
+            android:backgroundTint="@color/white"
+            android:id="@+id/btFechar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Pagamento A Vista"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="@color/purple"
+            android:textSize="22sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="22sp"
+        android:textColor="@color/purple"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tvIdVenda"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        android:fontFamily="@font/rubik_light"
+        android:paddingLeft="10dp"
+        android:id="@+id/tvNomeCliente"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/purple"
+        android:fontFamily="@font/rubik_light"
+        android:paddingLeft="10dp"
+        android:id="@+id/tvData"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        android:fontFamily="@font/rubik_light"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/tvFormaPagamento"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista de Produtos:"
+        android:textSize="16sp"
+        android:textColor="@color/purple"
+        android:fontFamily="@font/rubik_light"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rvDetalheFinal"/>
+    </ScrollView>
+</LinearLayout>

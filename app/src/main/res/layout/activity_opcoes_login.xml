@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="View.OpcoesLoginActivity"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="35dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:backgroundTint="@color/purple"
+            android:src="@drawable/bt_voltar"
+            android:id="@+id/btVoltarTelaInicial"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="Entrar"
+            android:textColor="@color/purple"
+            android:fontFamily="@font/rubik_medium"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Koffee"
+        android:textColor="@color/purple"
+        android:fontFamily="@font/rubik_bold"
+        android:textSize="36sp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entre como dono ou colaborador"
+        android:textSize="16sp"
+        android:textColor="@color/black_purple"
+        android:fontFamily="@font/rubik_light"
+        android:layout_marginBottom="50dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_opcao_login"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp"/>
+    <Button
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/purple"
+        android:layout_gravity="center_horizontal"
+        android:text="Sou Dono"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btLoginDono"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="ou"
+        android:fontFamily="@font/rubik_light"
+        android:textColor="@color/black_purple"
+        android:textSize="12sp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/purple"
+        android:layout_gravity="center_horizontal"
+        android:text="Sou Colaborador"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btLoginColaborador"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não tem conta? "
+            android:textSize="12sp"
+            android:textColor="@color/black_purple"
+            android:fontFamily="@font/rubik_light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastre-se"
+            android:textSize="12sp"
+            android:fontFamily="@font/rubik_light"
+            android:textColor="@color/purple"
+            android:id="@+id/tvCadastrese"/>
+    </LinearLayout>
+
+</LinearLayout>

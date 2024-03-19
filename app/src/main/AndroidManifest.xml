@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.System_POS"
+        tools:targetApi="31">
+        <activity
+            android:name="View.VendaFinalizadaActivity"
+            android:exported="false" />
+        <activity
+            android:name="View.FinalizarVendaAvistaActivity"
+            android:exported="false" />
+        <activity
+            android:name="View.FinalizarVendaAVistaActivity"
+            android:exported="false" />
+        <activity
+            android:name="View.CadastroClienteActivity"
+            android:exported="false" />
+        <activity
+            android:name="View.DetalheVendaActivity"
+            android:exported="false" />
+        <activity
+            android:name="View.CadastroProdutoActivity"
+            android:exported="false" />
+        <activity
+            android:name="View.ListaProdutosActivity"
+            android:exported="false" />
+        <activity
+            android:name="View.AdministracaoActivity"
+            android:exported="false" />
+        <activity
+            android:name="View.OpcoesLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="View.CadastroUsuarioActivity"
+            android:exported="false" />
+        <activity
+            android:name="View.TelaInicialActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="View.MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

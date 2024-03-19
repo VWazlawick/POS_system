@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/opAtendente"
+        android:title="Atendente"
+        />
+    <item android:id="@+id/opHistCompra"
+        android:title="Histórico de Compras"/>
+    <item android:id="@+id/opApontarErro"
+        android:title="Apontar Erro"/>
+    <item android:id="@+id/opAdministracao"
+        android:title="Administração"/>
+    <item android:id="@+id/opConta"
+        android:title="Conta"/>
+    <item android:id="@+id/opSuporte"
+        android:title="Suporte"/>
+
+
+</menu>

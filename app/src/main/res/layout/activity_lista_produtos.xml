@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="View.ListaProdutosActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="35dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:src="@drawable/bt_voltar_roxo"
+            android:backgroundTint="@color/white"
+            android:id="@+id/btVoltarTelaInicial"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Lista de Produtos"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="@color/purple"
+            android:textSize="22sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="9"
+            android:background="@drawable/borda_edittext"
+            android:hint="Procure o nome do produto"
+            android:fontFamily="@font/rubik_light"
+            android:paddingLeft="10dp"
+            android:textColor="#BDBDBD"
+            android:id="@+id/edBuscar"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/search_roxo"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:id="@+id/btBuscarProduto"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F7F9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/lnTitulo">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:fontFamily="@font/rubik_light"
+                android:text="Produto"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/rubik_light"
+                android:text="Custo"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/rubik_light"
+                android:text="Venda"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/purple"
+            android:orientation="vertical"
+            android:id="@+id/lnLine"
+            android:layout_below="@+id/lnTitulo"
+            android:layout_marginBottom="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rvProdutos"
+            android:layout_below="@+id/lnLine"/>
+
+        <Button
+            android:id="@+id/btCadastrarNovoProduto"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/purple"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Cadastrar Produto"
+            android:textSize="16sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+    
+
+</LinearLayout>

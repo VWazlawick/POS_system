@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="35dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:backgroundTint="@color/purple"
+            android:src="@drawable/bt_voltar"
+            android:id="@+id/btVoltarOpcoes"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="Administrador"
+            android:textColor="@color/purple"
+            android:fontFamily="@font/rubik_medium"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/purple"
+        android:fontFamily="@font/rubik_light"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/borda_botao"
+        android:hint="exemplo@email.com"
+        android:textSize="12sp"
+        android:paddingLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/edEmailAdm"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        android:textColor="@color/purple"
+        android:fontFamily="@font/rubik_light"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/borda_botao"
+        android:hint="apenas números"
+        android:textSize="12sp"
+        android:paddingLeft="30dp"
+        android:layout_marginBottom="35dp"
+        android:inputType="textPassword"
+        android:id="@+id/edSenhaAdm"
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/purple"
+        android:text="Login"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/btLogarAdm"/>
+
+
+</LinearLayout>

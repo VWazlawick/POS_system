@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PopUpMenuStyle">
+        <item name="colorPrimary"> @color/purple</item>
+        <item name="popupMenuStyle"> @style/PopUpMenu</item>
+    </style>
+    <style name="PopUpMenu">
+        <item name="android:popupBackground"> @color/purple</item>
+    </style>
+
+
+    <style name="BordaBotao">
+
+        <item name="strokeColor"> @color/purple</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+</resources>
